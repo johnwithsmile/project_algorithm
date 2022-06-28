@@ -1,0 +1,39 @@
+<!--  
+
+    길이가 서로 다른 abc 세 개의 막대 길이가 주어지면 이 세 막대로 삼각형을 만들 수 있으면
+    yes, 만들 수 없으면 no
+
+    입력은 100이하의 서로 다른 a,b,c
+    6, 7, 11 -> yes
+    13, 33, 17 -> no
+
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(a, b, c) {
+        let answer = "YES",
+          max;
+        let sum = a + b + c;
+        if (a > b) max = a;
+        else max = b;
+        if (c > max) max = c;
+        if (sum - max <= max) answer = "NO";
+        return answer;
+      }
+      console.log(solution(13, 33, 17));
+    </script>
+  </body>
+</html>
+
+<!--  
+  if문의 조금 더 진화형, 삼각형의 조건을 알아야한다. 
+  삼각형은 짧은거 두개 > 긴거 하나는 되어야한다.
+  max를 만들어서 가장 긴걸 먼저 구함
+  근데 누가 들어간지 모름 그래서 세 수를 sum으로 정해서 합해놓는다.
+  그리고 답이 아니면 정답을 no, 아니면 yes가 출력되게함
+-->

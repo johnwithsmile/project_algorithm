@@ -1,0 +1,42 @@
+<!--  
+
+    1부터 n까지의 합 출력하기 
+    자연수 n이 입력되면 1부터 n까지의 합 출력하기
+
+    첫 번째 줄에 20이하의 자연수 n이 입력됨
+    
+    입력예제 
+    1 -> 21
+    10
+
+
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(n) {
+        let answer = 0;
+        for (let i = 1; i <= n; i++) {
+          answer = answer + i;
+        }
+
+        return answer;
+      }
+      console.log(solution(6));
+    </script>
+  </body>
+</html>
+
+<!--  
+    
+    누적하는건 for문을 사용하는게 좋음
+    1씩 증가하면서 하나씩 더하는 모습
+    i가 1일때 0 + 1 
+    i가 2일때 1 + 2
+    i가 3일때 3 + 3
+    계속 더하는 식 
+-->

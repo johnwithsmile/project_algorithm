@@ -1,0 +1,44 @@
+<!--  
+
+  A를 #으로
+  대문자로 이루어진 영어단어가 입력되면 단어에 포함된 'A'를 모두 '#'으로 바꾸어 출력하는 프로그램을 작성하세요
+
+  입력
+  첫 번째 줄에 문자열이 입력
+
+  출력 첫 번쨰 줄에 바뀐 단어 출력
+
+  BANANA
+  B#N#N#
+
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+        for (let x of s) {
+          if (x === "A") answer += "#";
+          else answer += x;
+        }
+
+        return answer;
+      }
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
+
+<!--  
+
+  문자열도 for문으로 탐색할 수 있음
+  a가 발견되면 += append 를 이용해서 그냥 더하면된다. 
+  아니면 그냥 순서에 있던 x를 넣으면됨 
+
+  
+-->

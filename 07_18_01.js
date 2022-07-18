@@ -10,12 +10,20 @@ console.log(arr)// ["010", "1234", "5678"]
 
 */
 const number = "01012345678";
+
 const firstarr = number[0] + number[1] + number[2];
 const secondarr = number[3] + number[4] + number[5] + number[6];
 const thirdarr = number[7] + number[8] + number[9] + number[10];
-// const arr = [];
+const arr = (firstarr, secondarr, thirdarr);
 const arr = arr.concat(firstarr, secondarr, thirdarr);
+console.log(arr);
 
+// 2번 풀이
+const number = "01012345678";
+const arr = [];
+arr.push(number.slice(0, 3));
+arr.push(number.slice(3, 7));
+arr.push(number.slice(7, 11));
 console.log(arr);
 /* 
 

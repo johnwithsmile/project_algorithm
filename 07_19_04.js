@@ -56,4 +56,5 @@ const classmates = [
 
 classmates[1].school = "다람쥐초등학교"
 1번(영희)의 객체를 수정하면된다
+
  */

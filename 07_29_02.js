@@ -21,7 +21,13 @@
 score - 숫자열
 
 예상 결과
-
+grade(105)  // "잘못된 점수입니다"
+grade(-10)  // "잘못된 점수입니다"
+grade(97)   // "A"
+grade(86)   // "B"
+grade(75)   // "C"
+grade(66)   // "D"
+grade(52)   // "F"
 */
 
 function grade(score) {
@@ -40,14 +46,6 @@ function grade(score) {
 
 /* 
 
-str = '12345'라고하면 제일 큰 수를 가져와야함
-let biggest = 0 이라고 설정, length까지 반복, 1씩증가
-for(let i = 0; i < str.length; i = i+){
-	console.log(str[i])
-}
-큰수 가져오기 큰수는 저장, 아니면 넘어가기
-
-typeof는 다음에 오는 것의 속성 평가, str이므로 숫자로 변경해줘야함
-
+연산자만 잘 쓰면 작동하는 if문
 
  */

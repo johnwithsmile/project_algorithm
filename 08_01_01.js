@@ -62,11 +62,9 @@ console.log(
     grade +
     "입니다."
 );
-alert(
-  `의류를 구매한 횟수는 총 ${category}회 금액은 ${category}원이며 등급은 ${category}입니다.`
-);
+
 /* 
 
-연산자만 잘 쓰면 작동하는 if문
-
+for문응용, 의류가 있으면 count와 price를 계산시킨다
+그리고 그걸 조건에 걸어서 등급 표시까지 함 . 
  */

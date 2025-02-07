@@ -13,3 +13,5 @@ function solution(age) {
     let answer = 0;
     return answer = 2022 - age + 1;
 }
+
+// 태어날 때 한살이어서 1살 넣어야한다.

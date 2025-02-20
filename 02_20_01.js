@@ -10,13 +10,9 @@
 // 2	10	2048
 // 7	15	229,376
 
-// .length를 쓰면 금방 풀 것 같은데, 문자열이라 셀 수 없음
-// 문자열을 배열로 변환, split()사용
-// 이후 .length로 길이 구하고, *2로 풀이!
+// 1시간에 두배니까 2의 거듭제곱을 사용
+// n * (2 ** t)로 풀이
 
-function solution(message) {
-  let answerArr = message.split("");
-  // 문자열을 배열로 전환
-  return (result = answerArr.length * 2);
-  // 길이를 구한 후 *2
+function solution(n, t) {
+  return n * 2 ** t;
 }

@@ -1,17 +1,19 @@
-// 배열 자르기
-// 정수 배열 numbers와 정수 num1, num2가 매개변수로 주어질 때, numbers의 num1번 째 인덱스부터 num2번째 인덱스까지 자른 정수 배열을 return 하도록 solution 함수를 완성해보세요.
-// 제한사항
-// 2 ≤ numbers의 길이 ≤ 30
-// 0 ≤ numbers의 원소 ≤ 1,000
-// 0 ≤num1 < num2 < numbers의 길이
-// 입출력 예
-// numbers	num1	num2	result
-// [1, 2, 3, 4, 5]	1	3	[2, 3, 4]
-// [1, 3, 5]	1	2	[3, 5]
+/* 
+두 수의 합 
+정수 num1과 num2가 주어질 때, num1과 num2의 합을 return하도록 solution 함수를 완성해주세요.
 
-// 자르기 -> slice!
-// 값을 보니 끝이 미포함..
-// 그럼 +1 로 해결
+제한사항
+-50,000 ≤ num1 ≤ 50,000
+-50,000 ≤ num2 ≤ 50,000
+
+입출력 예
+num1	num2	result
+2	3	5
+100	2	102
+
+그냥 합을 리턴한다 끝!
+
+*/
 
 function solution(numbers, num1, num2) {
   return numbers.slice(num1, num2 + 1);
